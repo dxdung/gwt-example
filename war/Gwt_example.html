@@ -24,6 +24,10 @@
     <!-- be added before this line.                -->
     <!--                                           -->
     <script type="text/javascript" language="javascript" src="gwt_example/gwt_example.nocache.js"></script>
+    <script src="lib/react.js"></script>
+    <script src="lib/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+    <script src="lib/react-component-example.js"></script>
   </head>
 
   <!--                                           -->
@@ -33,27 +37,15 @@
   <!--                                           -->
   <body>
 
-    <!-- RECOMMENDED if your web app will not function without JavaScript enabled -->
-    <noscript>
-      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
-        Your web browser must have JavaScript enabled
-        in order for this application to display correctly.
-      </div>
-    </noscript>
-
-    <h1>Web Application Starter Project</h1>
-
-    <table align="center">
-      <tr>
-        <td colspan="2" style="font-weight:bold;">Please enter your name:</td>        
-      </tr>
-      <tr>
-        <td id="nameFieldContainer"></td>
-        <td id="sendButtonContainer"></td>
-      </tr>
-      <tr>
-        <td colspan="2" style="color:red;" id="errorLabelContainer"></td>
-      </tr>
-    </table>
+    <img src="images/wwf-logo-design.jpg" />
+  	<h1>GWT EXAMPLE</h1>
+  	<div id="root"></div>
+	<script type="text/babel">
+ 	let Image = reactComponentExample.Image;
+ 	ReactDOM.render(
+         <Image />,
+   	document.getElementById('root')
+ 	);
+	</script>
   </body>
 </html>
