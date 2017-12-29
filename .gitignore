@@ -5,3 +5,5 @@
 .settings/com.google.appengine.eclipse.core.prefs
 .project
 .classpath
+/bin/
+/gwt-unitCache/

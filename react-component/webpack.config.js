@@ -1,7 +1,7 @@
 module.exports = {
   entry: './index.js',
   output: {
-    path: './dist',
+    path: './../war/lib',
     filename: 'react-component-example.js',
     library: 'reactComponentExample',
     libraryTarget: 'umd',
