@@ -6,8 +6,8 @@ export default class Image extends React.Component {
         this.handleClick = this.handleClick.bind(this);
     }
     handleClick() {
-      // call api exposed from GWT
-        window.MyApp.sayHello("Hello Dzung!!!!!!!!!!!!!!!!!!!!!");
+      // callback function exposed by GWT
+        window.MyApp.action((x) => x + 3);
     }
     render() {
         return (
